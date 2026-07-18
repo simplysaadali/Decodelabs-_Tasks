@@ -1,0 +1,23 @@
+{
+  "name": "backend-crud-project",
+  "version": "1.0.0",
+  "description": "Project 2: Database Integration (CRUD) - DecodeLabs Industrial Training",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.1",
+    "nodemon": "^3.1.4"
+  }
+}
